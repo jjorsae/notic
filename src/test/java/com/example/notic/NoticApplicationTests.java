@@ -24,10 +24,10 @@ class noticControllerTests {
 	private MockMvc mvc;
 
 	@Test
-	void contextLoads() throws Exception {
+	public void contextLoads() throws Exception {
 		String test = "test";
 
-		mvc.perform(get("/test"))
+		mvc.perform(get("/notic/test"))
 				.andExpect(status().isOk())
 				.andExpect(content().string(test));
 

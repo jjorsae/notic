@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 @RequestMapping("/notic/*")
-@RestController
 public class noticController {
 
     @GetMapping("/test")
