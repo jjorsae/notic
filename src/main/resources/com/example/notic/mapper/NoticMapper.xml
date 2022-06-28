@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.notic.mapper.NoticeMapper">
+    <select id="noticCount" resultType="int">
+        SELECT COUNT (noticId) AS cnt FROM test_db;
+    </select>
+
+    <select id="getList" resultType="com.example.notic.mapper.NoticeMapper">
+        SELECT
+        *
+        FROM test_db;
+    </select>
+</mapper>
